@@ -1,0 +1,131 @@
+{
+  "main": {
+    "id": "eb828e360c3616a2",
+    "type": "split",
+    "children": [
+      {
+        "id": "e412743d88825d56",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Architecture/Resource Aware Partitioning.md",
+            "mode": "source",
+            "source": true
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "27ff1ae7482e0c99",
+    "type": "split",
+    "children": [
+      {
+        "id": "ae84a7cf3fd3040c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "75166ea75d215c87",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "00ec491ea41f2dd0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "ingest scaling",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f82fa47a380a88e9",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f0119740beca1f0b",
+    "type": "split",
+    "children": [
+      {
+        "id": "29e21afd5899b9cc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9911533e4aeba7c2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Architecture/Resource Aware Partitioning.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "91e262244d96e84a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Architecture/Resource Aware Partitioning.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8db1f984dba3a043",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "e412743d88825d56",
+  "lastOpenFiles": [
+    "Architecture/Resource Aware Partitioning.md",
+    "Plans/Kanban board.md",
+    "Architecture/Metrics in Memory.md",
+    "Architecture/Kafka.md",
+    "General/Dictionary.md",
+    "2022-02-23.md",
+    "General/Questions.md",
+    "2022-02-21.md",
+    "Tasks/Eliminate flaky alarm.md",
+    "Architecture/Deadman.md"
+  ]
+}

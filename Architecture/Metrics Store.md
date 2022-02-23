@@ -1,0 +1,1 @@
+==TODO: Summary of S3 vs cassandra design => Wojtek's point of view==
