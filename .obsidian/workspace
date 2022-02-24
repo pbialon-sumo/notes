@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Architecture/Resource Aware Partitioning.md",
+            "file": "Feedback for SUMO.md",
             "mode": "source",
             "source": true
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Architecture/Resource Aware Partitioning.md",
+                "file": "Feedback for SUMO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Architecture/Resource Aware Partitioning.md",
+                "file": "Feedback for SUMO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,15 +117,15 @@
   },
   "active": "e412743d88825d56",
   "lastOpenFiles": [
-    "Architecture/Resource Aware Partitioning.md",
-    "Plans/Kanban board.md",
-    "Architecture/Metrics in Memory.md",
-    "Architecture/Kafka.md",
-    "General/Dictionary.md",
-    "2022-02-23.md",
+    "Feedback for SUMO.md",
     "General/Questions.md",
-    "2022-02-21.md",
+    "General/Dictionary.md",
+    "Plans/1-1 questions.md",
+    "Plans/Kanban board.md",
+    "2022-02-24.md",
+    "2022-02-23.md",
     "Tasks/Eliminate flaky alarm.md",
-    "Architecture/Deadman.md"
+    "Tasks/Review - partitioning.md",
+    "2022-02-21.md"
   ]
 }

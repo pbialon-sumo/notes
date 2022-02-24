@@ -1,21 +1,46 @@
 ## Introduction
 
-==TODO==
 There is a [design doc](https://docs.google.com/document/d/1aYMXJOh-wp46GI577l7gIeRAHy45gSbIAN02tTMHjTU/edit) for RAP.
+
+RAP consists of two main mechanisms: _Autoscaler_ and _Rebalancer_.
+These mechanisms works pretty independently.
+**Autoscaler** is managing load on[[Dictionary#^eac209|KTPs]], and adds partitions to overloaded Kafka topics.
+**Rebalancer** is managing load on broker (host). 
 
 ## Autoscaling
 
+When the traffic on the single KTP increases over some threshold, we have to split this topic into more number of partitions. Then we can distribute partitions across multiple nodes / brokers and spread load evenly. 
 
-## Partitioning
+KTPAutoscaler is a mechanism, that increases number of topic's partitions if needed.  
+
+
+
+**Strategia skalowania ktpsow.**
+`ktpScalingStrategyPicker`
+
+Metricsforge obserwuje ktpsy z ktorych czyta i do ktorych czyta (troche sredni design - moze osobny mikroserwis) i decyduje czy trzeba je skalowac.
+
+
+`metricsKTPPartitioner` - [https://github.com/Sanyaku/sumologic/blob/3d3c07e7e766ad23ec040203df0b7f46a51c2a50/metricsforge/src/main/scala/com/sumologic/metricsforge/PartitioningAssignerBeans.scala#L183](https://github.com/Sanyaku/sumologic/blob/3d3c07e7e766ad23ec040203df0b7f46a51c2a50/metricsforge/src/main/scala/com/sumologic/metricsforge/PartitioningAssignerBeans.scala#L183)
+
+
+Mutatory requestujace zmiany do partitioningu.
+Jest `EmergencyKTPUnassigner` ktory probuje 
+
+
+
+
+## Rebalancing
+Jak pchniemy za duzo na wszystkie node'y na klastrze (rownomiernie) to rebalancing stwierdzi ze wszystko jest OK.
 
 
 ## Known problems
 
 This part of code reuses some structures from Log's Partitioning, which is a bit different from ours. Therefore it's:
 - quite complicated and bloated.
-- not well tested
+- not tested well
 
-Furthermore it's a _critical part of a system_. If partitioning failed everything would fail and stop working.
+Furthermore it's a _critical part of a system_. If partitioning failed, the whole pipeline of processing would stop working.
 
 ```ad-warning
 title: Do not count on Deadman
@@ -63,17 +88,6 @@ System do autoskalowania ktpsow (zwieksza liczbe partycji, ale nie dostawia node
 
 ### Autoscaling
 
-Strategia skalowania ktpsow.
-`ktpScalingStrategyPicker`
-
-Metricsforge obserwuje ktpsy z ktorych czyta i do ktorych czyta (troche sredni design - moze osobny mikroserwis) i decyduje czy trzeba je skalowac.
-
-
-`metricsKTPPartitioner` - [https://github.com/Sanyaku/sumologic/blob/3d3c07e7e766ad23ec040203df0b7f46a51c2a50/metricsforge/src/main/scala/com/sumologic/metricsforge/PartitioningAssignerBeans.scala#L183](https://github.com/Sanyaku/sumologic/blob/3d3c07e7e766ad23ec040203df0b7f46a51c2a50/metricsforge/src/main/scala/com/sumologic/metricsforge/PartitioningAssignerBeans.scala#L183)
-
-
-Mutatory requestujace zmiany do partitioningu.
-Jest `EmergencyKTPUnassigner` ktory probuje 
 
 
 
@@ -84,29 +98,12 @@ W Alertach wyciagamy dane o rate z Sumo.
 
 => warto ustandaryzowac
 
-**Problemy**
 
 
 
 
-
-----
+**Lag**
 Lag na metrykach (p99 1-2min) wplywa na alerty ktore maja krotkie okno (np. alerty na okno 2 minutowe dla Acqui).
 Ale wiekszosc monitorow ma okna 10-15 minutowe. 
 
-
 ----
-
-
-Autoscaler vs Rebalancing
-Dzialaja "w miare niezaleznie".
-KTPAutoscaler => jakie obciazenie ma ktps
-Rebalancing => jakie obciazenie ma node
-
-KTPAutoscaler zwieksza liczbe partycji na topicu, zeby mozna bylo je "latwiej" rozrzucic pomiedzy node'y
-
-Jak pchniemy za duzo na wszystkie node'y na klastrze (rownomiernie) to rebalancing stwierdzi ze wszystko jest OK.
-
-
-#### Korzystania z metryk z Sumo w MetricsForge
-MetricsForge odpytuje node'y o metryki. Moznaby pobierac je z Sumo jak to robi Alert.

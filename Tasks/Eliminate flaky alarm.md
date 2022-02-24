@@ -132,6 +132,20 @@ _sourceCategory=metricsforge_metrics_reporter ktp_input_data_points_rate | parse
 
 
 
-###
+### Random notes 
 Od czego zalezy max ilosc ktpsow?
+
+```bash
+cat rates.csv | cut -d"," -f3 | sed "s/\"//g" | sort -n | awk '$1 > 5000 { print }' | wc -l
+
+829
+```
+
+
+829 / 100 000 => 0.8%
+Przejdzie caly miesiac
+
+Sprawdzic jaka jest najwieksza wariacja pomiedzy kolejnymi data-ratami
+
+
 

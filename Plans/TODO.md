@@ -19,3 +19,4 @@
 - [ ] [Intro to akka](https://www.toptal.com/scala/concurrency-and-fault-tolerance-made-easy-an-intro-to-akka)
 - [ ] Read about *reactive streams*
 - [ ] Learn about [akka streams](https://doc.akka.io/docs/akka/current/stream/stream-quickstart.html)
+- [ ] Learn more about statistics (in the area of logs)

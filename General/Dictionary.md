@@ -2,7 +2,7 @@
 
 **[[Metrics in Memory|MIM]]** - metrics in memory
 
-**KTP** - kafka topic partition
+**KTP** - kafka topic partition ^eac209
 
 **NFR** - non-functional requirement
 
