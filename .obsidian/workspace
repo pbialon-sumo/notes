@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Architecture/Metrics Forge.md",
+            "file": "Plans/1-1 questions.md",
             "mode": "preview",
             "source": true
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Architecture/Metrics Forge.md",
+                "file": "Plans/1-1 questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Architecture/Metrics Forge.md",
+                "file": "Plans/1-1 questions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,15 +117,15 @@
   },
   "active": "e412743d88825d56",
   "lastOpenFiles": [
+    "Plans/1-1 questions.md",
+    "2022-02-24.md",
+    "2022-02-23.md",
+    "Feedback for SUMO.md",
     "Architecture/Metrics Forge.md",
     "General/Dictionary.md",
     "Architecture/Kafka.md",
     "Architecture/Autoplaybooks.md",
-    "2022-02-24.md",
-    "Feedback for SUMO.md",
     "General/Questions.md",
-    "Plans/1-1 questions.md",
-    "Plans/Kanban board.md",
-    "2022-02-23.md"
+    "Plans/Kanban board.md"
   ]
 }
