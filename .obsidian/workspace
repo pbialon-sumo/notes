@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Feedback for SUMO.md",
-            "mode": "source",
+            "file": "Architecture/Metrics Forge.md",
+            "mode": "preview",
             "source": true
           }
         }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Feedback for SUMO.md",
+                "file": "Architecture/Metrics Forge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Feedback for SUMO.md",
+                "file": "Architecture/Metrics Forge.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,15 +117,15 @@
   },
   "active": "e412743d88825d56",
   "lastOpenFiles": [
+    "Architecture/Metrics Forge.md",
+    "General/Dictionary.md",
+    "Architecture/Kafka.md",
+    "Architecture/Autoplaybooks.md",
+    "2022-02-24.md",
     "Feedback for SUMO.md",
     "General/Questions.md",
-    "General/Dictionary.md",
     "Plans/1-1 questions.md",
     "Plans/Kanban board.md",
-    "2022-02-24.md",
-    "2022-02-23.md",
-    "Tasks/Eliminate flaky alarm.md",
-    "Tasks/Review - partitioning.md",
-    "2022-02-21.md"
+    "2022-02-23.md"
   ]
 }
