@@ -3,6 +3,7 @@
 3. Too many (long !) periods of watching smartphone screen.
 4. Dropping a topic of moving `PastFutureDropper` to receiver (go to Szymon with that)
 5. Alerts, too much time spent on python script and messing around with data.
+6. I'm too easily distracted. Not focused on the current task.
 
 	I should've run simple queries to assess how much impact it would have had on the alarm triggering with different thresholds. 
 
