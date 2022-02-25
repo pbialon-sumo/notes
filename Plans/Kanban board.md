@@ -22,12 +22,12 @@ kanban-plugin: basic
 
 ## IN PROGRESS
 
-- [ ] Clean up notes and prepare plan for tuning alarm
-- [ ] Investigate how many alerts would have been if there were another treshold (e.g. 100k/10minutes or sth like this) [interface](https://us1data.long.sumologic.net/ui/#/search/b0ddfd7f_2d4d_23cb_9f04_a7eb4a09f0c8)
 
 
 ## DONE
 
+- [ ] Clean up notes and prepare plan for tuning alarm
+- [ ] Investigate how many alerts would have been if there were another treshold (e.g. 100k/10minutes or sth like this) [interface](https://us1data.long.sumologic.net/ui/#/search/b0ddfd7f_2d4d_23cb_9f04_a7eb4a09f0c8)
 
 
 

@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Plans/1-1 questions.md",
-            "mode": "preview",
+            "file": "2022-02-25.md",
+            "mode": "source",
             "source": true
           }
         }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Plans/1-1 questions.md",
+                "file": "2022-02-25.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Plans/1-1 questions.md",
+                "file": "2022-02-25.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,15 +117,15 @@
   },
   "active": "e412743d88825d56",
   "lastOpenFiles": [
-    "Plans/1-1 questions.md",
-    "2022-02-24.md",
+    "2022-02-25.md",
+    "Plans/TODO.md",
+    "Plans/Daily Kanban.md",
+    "Plans/Daily KANBAN.md",
+    "Plans/Kanban board.md",
     "2022-02-23.md",
+    "2022-02-24.md",
     "Feedback for SUMO.md",
-    "Architecture/Metrics Forge.md",
-    "General/Dictionary.md",
-    "Architecture/Kafka.md",
-    "Architecture/Autoplaybooks.md",
-    "General/Questions.md",
-    "Plans/Kanban board.md"
+    "Plans/1-1 questions.md",
+    "Architecture/Metrics Forge.md"
   ]
 }
