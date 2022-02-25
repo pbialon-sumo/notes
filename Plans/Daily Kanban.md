@@ -15,6 +15,7 @@ kanban-plugin: basic
 - [ ] Analiza jak rate wplywa na threshold
 - [ ] Review dla Szymona
 - [ ] Podniesienie thresholdu w kodzie
+- [ ] Nauczyc sie korzystac a API Sumo
 
 
 ## IN PROGRESS

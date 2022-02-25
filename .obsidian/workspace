@@ -7,11 +7,9 @@
         "id": "77363a9cca93cf16",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "kanban",
           "state": {
-            "file": "Self review/My pitfalls.md",
-            "mode": "source",
-            "source": true
+            "file": "Plans/Daily Kanban.md"
           }
         }
       }
@@ -78,7 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Self review/My pitfalls.md",
+                "file": "Plans/Daily Kanban.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +93,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Self review/My pitfalls.md",
+                "file": "Plans/Daily Kanban.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,19 +126,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 427
+    "width": 427,
+    "collapsed": true
   },
   "active": "77363a9cca93cf16",
   "lastOpenFiles": [
+    "Plans/Daily Kanban.md",
+    "Instructions/Local deployment.md",
+    "General/Questions.md",
     "Self review/My pitfalls.md",
     "Day Planners/Day Planner-20220225.md",
     "Day Planners/Untitled.md",
     "2022-02-25.md",
     "2022-02-23.md",
-    "Plans/Daily Kanban.md",
     "List of tasks I do whan I procrastinate.md",
-    "Feedback for SUMO.md",
-    "Plans/TODO.md",
-    "Self review/Rules.md"
+    "Feedback for SUMO.md"
   ]
 }
