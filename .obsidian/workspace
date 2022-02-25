@@ -4,16 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "e412743d88825d56",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "2022-02-25.md",
-            "mode": "source",
-            "source": true
+        "id": "695e9e846ac25df0",
+        "type": "split",
+        "children": [
+          {
+            "id": "e412743d88825d56",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Self review/My pitfalls.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "891d42fc176ab351",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "List of tasks I do whan I procrastinate.md",
+                "mode": "source",
+                "source": true
+              }
+            }
           }
-        }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -77,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022-02-25.md",
+                "file": "List of tasks I do whan I procrastinate.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2022-02-25.md",
+                "file": "List of tasks I do whan I procrastinate.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -115,17 +134,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e412743d88825d56",
+  "active": "891d42fc176ab351",
   "lastOpenFiles": [
+    "List of tasks I do whan I procrastinate.md",
+    "Self review/Rules.md",
+    "Self review/My pitfalls.md",
+    "Self review/My successes.md",
     "2022-02-25.md",
     "Feedback for SUMO.md",
-    "Self review/My pitfalls.md",
     "Plans/TODO.md",
     "Plans/Daily Kanban.md",
     "Plans/Daily KANBAN.md",
-    "Plans/Kanban board.md",
-    "2022-02-23.md",
-    "2022-02-24.md",
-    "Plans/1-1 questions.md"
+    "Plans/Kanban board.md"
   ]
 }
