@@ -7,6 +7,7 @@ kanban-plugin: basic
 ## PLAN
 
 - [ ] Dodanie analizy "ilosciowej"
+- [ ] Spisanie uwag Wojtka ze Slacka
 
 
 ## PLAN FOR TODAY

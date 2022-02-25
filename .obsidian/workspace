@@ -4,35 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "695e9e846ac25df0",
-        "type": "split",
-        "children": [
-          {
-            "id": "e412743d88825d56",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Self review/My pitfalls.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "891d42fc176ab351",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "List of tasks I do whan I procrastinate.md",
-                "mode": "source",
-                "source": true
-              }
-            }
+        "id": "77363a9cca93cf16",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Self review/My pitfalls.md",
+            "mode": "source",
+            "source": true
           }
-        ],
-        "direction": "horizontal"
+        }
       }
     ],
     "direction": "vertical"
@@ -89,6 +70,7 @@
       {
         "id": "29e21afd5899b9cc",
         "type": "tabs",
+        "dimension": 19.474196689386563,
         "children": [
           {
             "id": "9911533e4aeba7c2",
@@ -96,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "List of tasks I do whan I procrastinate.md",
+                "file": "Self review/My pitfalls.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "List of tasks I do whan I procrastinate.md",
+                "file": "Self review/My pitfalls.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,23 +110,37 @@
             }
           }
         ]
+      },
+      {
+        "id": "0af6f7ee5cb04bd0",
+        "type": "tabs",
+        "dimension": 80.52580331061344,
+        "children": [
+          {
+            "id": "6bdf53316060f8f3",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 427
   },
-  "active": "891d42fc176ab351",
+  "active": "77363a9cca93cf16",
   "lastOpenFiles": [
-    "List of tasks I do whan I procrastinate.md",
-    "Self review/Rules.md",
     "Self review/My pitfalls.md",
-    "Self review/My successes.md",
+    "Day Planners/Day Planner-20220225.md",
+    "Day Planners/Untitled.md",
     "2022-02-25.md",
+    "2022-02-23.md",
+    "Plans/Daily Kanban.md",
+    "List of tasks I do whan I procrastinate.md",
     "Feedback for SUMO.md",
     "Plans/TODO.md",
-    "Plans/Daily Kanban.md",
-    "Plans/Daily KANBAN.md",
-    "Plans/Kanban board.md"
+    "Self review/Rules.md"
   ]
 }
