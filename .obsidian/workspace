@@ -7,9 +7,11 @@
         "id": "77363a9cca93cf16",
         "type": "leaf",
         "state": {
-          "type": "kanban",
+          "type": "markdown",
           "state": {
-            "file": "Plans/Daily Kanban.md"
+            "file": "Personal/General project info.md",
+            "mode": "source",
+            "source": true
           }
         }
       }
@@ -76,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Plans/Daily Kanban.md",
+                "file": "Personal/General project info.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Plans/Daily Kanban.md",
+                "file": "Personal/General project info.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,6 +133,7 @@
   },
   "active": "77363a9cca93cf16",
   "lastOpenFiles": [
+    "Personal/General project info.md",
     "Plans/Daily Kanban.md",
     "Instructions/Local deployment.md",
     "General/Questions.md",
@@ -139,7 +142,6 @@
     "Day Planners/Untitled.md",
     "2022-02-25.md",
     "2022-02-23.md",
-    "List of tasks I do whan I procrastinate.md",
-    "Feedback for SUMO.md"
+    "List of tasks I do whan I procrastinate.md"
   ]
 }
