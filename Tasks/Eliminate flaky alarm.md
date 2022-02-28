@@ -2,7 +2,8 @@
 There is an alert monitor `metricsforge_ktp_input_data_points_rate`
 which triggered alert 845 times last year. The alert is triggered when on a single KTP there is more than 10 000 requests in one minute. The alert is based on `ktp_input_data_points_rate` metric.
 Unfortunately, the metrics is wrapped inside a log, and stored (as any other log entrance) in S3 storage. The very rule for that alarm is parsing the blob of logs.
-==**Why is that?** TODO: Cardinality??????==
+
+==TODO: Cardinality??????==
 
 **Slack discussion**
 [Slack](https://sumologic.slack.com/archives/C0LKC7QQZ/p1644945718427209?thread_ts=1644943739.404109&cid=C0LKC7QQZ "Follow link")
@@ -34,7 +35,7 @@ Ile alertow by sie trigerowalo jakby bylo 10minut + 40k.
 Pogadac w zespole jaki treshold na KTP jest bezpieczny. 
 Przeniesc do sumo jako dogfooding. Content management repository.
 
-Automatyzacja ingest scalingu.
+Automatyzacja ingest scalingu ???
 
 ---
 
@@ -72,6 +73,7 @@ In the interface there is a limit of 100k datapoints, for export / exploring.
 100k dp covers ~ 8 hours of data. We need at least 7 days, best 30, or 365.
 
 There are two ways of dealing with that problem.
+
 ##### Possible approaches
 1. Anyway try to export full data; that can be accomplished in two ways:
 	- use [Search Job API](https://help.sumologic.com/APIs/Search-Job-API/About-the-Search-Job-API) for sumo logic log queries
@@ -140,12 +142,16 @@ cat rates.csv | cut -d"," -f3 | sed "s/\"//g" | sort -n | awk '$1 > 5000 { print
 
 829
 ```
+---
 
 
-829 / 100 000 => 0.8%
-Przejdzie caly miesiac
-
-Sprawdzic jaka jest najwieksza wariacja pomiedzy kolejnymi data-ratami
+# Summary of analysis
+Using the data from
 
 
 
+[Dashboard](https://us1data.long.sumologic.net/ui/#/dashboardv2/in0XYDk7Ano1qEWgAcpIuR1sBr7A2oGlFpCK4AYm0HABcVb5f5zOhkN6UnAh?variables=ktp:0000000000520B73-metrics_raw_data-27)
+
+
+
+==TODO:== how many alerts it would be if the threshold was equal to 30k?
