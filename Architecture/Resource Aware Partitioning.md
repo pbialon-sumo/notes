@@ -7,14 +7,30 @@ There is a [design doc](https://docs.google.com/document/d/1aYMXJOh-wp46GI577l7g
 
 RAP consists of two main mechanisms: _Autoscaler_ and _Rebalancer_.
 These mechanisms works pretty independently.
+
+
 **Autoscaler** is managing load on [[Dictionary#^eac209|KTPs]], and adds partitions to overloaded Kafka topics.
 **Rebalancer** is managing load on broker (host). 
 
+All that is done by Metrics Forge. It observes both input and output ktps, and decides whether they need scaling.
+
+```ad-hint
+title: Design
+
+The desing is pretty poor. It could be another service.
+Beware of single point of failure!
+
+```
+
+
+
+![[Resource Aware Partitioning_2022-02-28 18.11.51.excalidraw]]
+
 ## Autoscaling
 
-When the traffic on the single KTP increases over some threshold, we have to split this topic into higher number of partitions. Then we can distribute partitions across multiple nodes / brokers and spread load evenly. 
+When the traffic on the single KTP exceeds a threshold, we have to split this topic into greater number of partitions. Then we can distribute partitions across multiple nodes / brokers and spread load more evenly. 
 
-KTPAutoscaler is a mechanism, that increases number of topic's partitions if needed.  
+`KTPAutoscaler` is a class, that increases number of topic's partitions if needed. 
 
 
 
@@ -24,7 +40,9 @@ KTPAutoscaler is a mechanism, that increases number of topic's partitions if nee
 Metricsforge obserwuje ktpsy z ktorych czyta i do ktorych czyta (troche sredni design - moze osobny mikroserwis) i decyduje czy trzeba je skalowac.
 
 
-`metricsKTPPartitioner` - [https://github.com/Sanyaku/sumologic/blob/3d3c07e7e766ad23ec040203df0b7f46a51c2a50/metricsforge/src/main/scala/com/sumologic/metricsforge/PartitioningAssignerBeans.scala#L183](https://github.com/Sanyaku/sumologic/blob/3d3c07e7e766ad23ec040203df0b7f46a51c2a50/metricsforge/src/main/scala/com/sumologic/metricsforge/PartitioningAssignerBeans.scala#L183)
+`metricsKTPPartitioner` => [Github](https://github.com/Sanyaku/sumologic/blob/3d3c07e7e766ad23ec040203df0b7f46a51c2a50/metricsforge/src/main/scala/com/sumologic/metricsforge/PartitioningAssignerBeans.scala#L183)
+
+
 
 
 Mutatory requestujace zmiany do partitioningu.
