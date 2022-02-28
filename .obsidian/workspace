@@ -134,13 +134,13 @@
   "active": "77363a9cca93cf16",
   "lastOpenFiles": [
     "Tasks/Flaky alarm/Eliminate flaky alarm.md",
-    "Tasks/Flaky alarm/Investigation.md",
-    "Self review/Rules.md",
     "General/Dictionary.md",
-    "Tasks/MacOS M1 freeze.md",
-    "Tasks/Review - partitioning.md",
-    "Tasks/Not bill customers for dropped datapoints.md",
-    "Tasks/Flaky alarm.md",
+    "Tasks/Flaky alarm/Investigation.md",
+    "Plans/Daily Kanban.md",
+    "Plans/TODO.md",
+    "Plans/Kanban board.md",
+    "General/Query Language/Logs.md",
+    "General/Query Language/Metrics.md",
     "2022-02-23.md",
     "2022-02-25.md"
   ]

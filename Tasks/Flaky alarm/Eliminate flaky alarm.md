@@ -42,7 +42,14 @@ Move that metrics to Sumo, to extend dogfooding.
 Automatisation of ingest scaling: [[Dictionary#^967a86|automatic ingest scaling]]
 
 **Szymon**
-... todo
+
+What are the factors influencing max throughput on kafka?
+- size of metric definition (metric's metadata)
+- ephemerality (how long-lived is a specific metric => is it in the Metrics Forge cache?)
+- Kafka curent load
+- how many datapoints there is per batch?
+- how many rules there is defined?  
+
 
 
 ## [[Investigation]] of adjusting thresholds
@@ -68,6 +75,13 @@ W ramach analizy wyszukalem wszystkie ktpsy, ktorych rate przekroczyl 20k, w dow
 
 Stworzylem [dashboard](https://us1data.long.sumologic.net/ui/#/dashboardv2/in0XYDk7Ano1qEWgAcpIuR1sBr7A2oGlFpCK4AYm0HABcVb5f5zOhkN6UnAh?variables=ktp:0000000000520B73-metrics_raw_data-27), ktory pozwalal na porownanie jak rate wplywal na wielkosc laga na danym ktpsie.
 
+**Query to get lag for specific ktp**
+```bash
+
+_sourceCategory=metricsforge LagMonitor Logging lag for | parse "lag=*." as lag | parse "KTP=*," as ktp | where ktp = "0000000000054B70-metrics_raw_data-234" | timeslice 1m | avg(lag) by _timeslice
+
+```
+
 Dla kazdego z powyzszych ktpsow przeanalizowalem czy podwyzszenie thresholdu na alert na rate niesie ze soba ryzyko.
 
 Okazuje sie ze ktpsy z reguly bardzo dobrze reagowaly na spike'i w racie, a rate powyzej 30k, nawet trwajacy dluzej niz kilka minut nie powodowywal duzego wzrostu laga (ktory utrzymywal sie na poziomie <= 10k, co przy throughpucie rzedu 30k/sek nie stanowi problemu). 
@@ -76,24 +90,18 @@ Okazuje sie ze ktpsy z reguly bardzo dobrze reagowaly na spike'i w racie, a rate
 [Dashboard](https://us1data.long.sumologic.net/ui/#/dashboardv2/in0XYDk7Ano1qEWgAcpIuR1sBr7A2oGlFpCK4AYm0HABcVb5f5zOhkN6UnAh?variables=ktp:0000000000520B73-metrics_raw_data-27)
 
 
+## Current status
+
+#### Our goal
+Have an alert which tells us whether to apply an _source_ or not.
+When to apply _ingest scaling_
+
+#### Flaky alert
+If this alert could tell us about the necessity of applying onesource, then we should adjust the threshold and leave it as **actionable**.
+If not, we should turn it off.
+
+We don't have an information about lag (delay) per ktp on metrics forge
 
 
+[Ingest scaling](https://docs.google.com/document/d/1RiU_hzQl1PeLA_Qpo0KXc1i8cjyQBdlAfsX0O8YJLBY/edit#)
 
-
-----
-
-## Meeting notes
-#### Michal Matusiak
-
-
-Idea:
-
-Remove the log & change it to a log message.
-
-Goal:
-- dashboard with an information how many times specific threshold was exceeded, day by day  
-
-
-
-Chcemy miec alert, ktory nam powie czy aplikowac onesource'a.
-Jutro na spotkaniu przegadamy.

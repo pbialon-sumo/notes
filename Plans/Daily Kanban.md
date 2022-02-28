@@ -6,25 +6,22 @@ kanban-plugin: basic
 
 ## PLAN
 
-- [ ] Dodanie analizy "ilosciowej"
-- [ ] Spisanie uwag Wojtka ze Slacka
+- [ ] Wybrac nastepne zadanie
+- [ ] Clean up notes about [[Resource Aware Partitioning]]
 
 
 ## PLAN FOR TODAY
 
-- [ ] Podniesienie thresholdu w kodzie
-- [ ] Nauczyc sie korzystac a API Sumo
-- [ ] Review dla Szymona
 
 
 ## IN PROGRESS
 
-- [ ] Analiza jak rate wplywa na threshold
 
 
 ## DONE
 
 **Complete**
+- [x] Analiza jak rate wplywa na threshold
 
 
 

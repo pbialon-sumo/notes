@@ -1,15 +1,18 @@
+## Table of contents
+```toc
+```
 ## Introduction
 
 There is a [design doc](https://docs.google.com/document/d/1aYMXJOh-wp46GI577l7gIeRAHy45gSbIAN02tTMHjTU/edit) for RAP.
 
 RAP consists of two main mechanisms: _Autoscaler_ and _Rebalancer_.
 These mechanisms works pretty independently.
-**Autoscaler** is managing load on[[Dictionary#^eac209|KTPs]], and adds partitions to overloaded Kafka topics.
+**Autoscaler** is managing load on [[Dictionary#^eac209|KTPs]], and adds partitions to overloaded Kafka topics.
 **Rebalancer** is managing load on broker (host). 
 
 ## Autoscaling
 
-When the traffic on the single KTP increases over some threshold, we have to split this topic into more number of partitions. Then we can distribute partitions across multiple nodes / brokers and spread load evenly. 
+When the traffic on the single KTP increases over some threshold, we have to split this topic into higher number of partitions. Then we can distribute partitions across multiple nodes / brokers and spread load evenly. 
 
 KTPAutoscaler is a mechanism, that increases number of topic's partitions if needed.  
 
