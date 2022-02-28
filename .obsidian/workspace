@@ -7,11 +7,9 @@
         "id": "77363a9cca93cf16",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "kanban",
           "state": {
-            "file": "Personal/General project info.md",
-            "mode": "source",
-            "source": true
+            "file": "Plans/Daily Kanban.md"
           }
         }
       }
@@ -78,7 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Personal/General project info.md",
+                "file": "Plans/Daily Kanban.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +93,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Personal/General project info.md",
+                "file": "Plans/Daily Kanban.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,8 +131,8 @@
   },
   "active": "77363a9cca93cf16",
   "lastOpenFiles": [
-    "Personal/General project info.md",
     "Plans/Daily Kanban.md",
+    "Personal/General project info.md",
     "Instructions/Local deployment.md",
     "General/Questions.md",
     "Self review/My pitfalls.md",

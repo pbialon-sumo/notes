@@ -12,14 +12,14 @@ kanban-plugin: basic
 
 ## PLAN FOR TODAY
 
-- [ ] Analiza jak rate wplywa na threshold
 - [ ] Podniesienie thresholdu w kodzie
 - [ ] Nauczyc sie korzystac a API Sumo
+- [ ] Review dla Szymona
 
 
 ## IN PROGRESS
 
-- [ ] Review dla Szymona
+- [ ] Analiza jak rate wplywa na threshold
 
 
 ## DONE
