@@ -146,12 +146,39 @@ cat rates.csv | cut -d"," -f3 | sed "s/\"//g" | sort -n | awk '$1 > 5000 { print
 
 
 # Summary of analysis
-Using the data from
+W ramach analizy wyszukalem wszystkie ktpsy, ktorych rate przekroczyl 20k, w dowolnym momencie w przeciagu ostatniego miesiaca. Lista tych ktpsow znajduje sie ponizej:
+- 0000000000054B70-metrics_raw_data-234
+- 0000000000054B70-metrics_raw_data-93
+- 0000000000482E67-metrics_raw_data-26
+- 0000000000482E67-metrics_raw_data-54
+- 0000000000520B73-metrics_raw_data-27
+- 0000000000520B73-metrics_raw_data-4
+- 0000000000BC1E2B-metrics_raw_data-0
+- 0000000000BC2213-metrics_raw_data-0
+- 0000000000BC3627-metrics_raw_data-1
+- 0000000000BC3627-metrics_raw_data-14
+- 0000000000BC3627-metrics_raw_data-17
+- 0000000000BC3627-metrics_raw_data-18
+- 0000000000BC3627-metrics_raw_data-26
+- 0000000000BC3627-metrics_raw_data-32
+- 0000000000BC3627-metrics_raw_data-56
+- 0000000000BC3627-metrics_raw_data-6
 
+Stworzylem [dashboard](https://us1data.long.sumologic.net/ui/#/dashboardv2/in0XYDk7Ano1qEWgAcpIuR1sBr7A2oGlFpCK4AYm0HABcVb5f5zOhkN6UnAh?variables=ktp:0000000000520B73-metrics_raw_data-27), ktory pozwalal na porownanie jak rate wplywal na wielkosc laga na danym ktpsie.
+
+Dla kazdego z powyzszych ktpsow przeanalizowalem czy podwyzszenie thresholdu na alert na rate niesie ze soba ryzyko.
+
+Okazuje sie ze ktpsy z reguly bardzo dobrze reagowaly na spike'i w racie, a rate powyzej 30k, nawet trwajacy dluzej niz kilka minut nie powodowywal duzego wzrostu laga (ktory utrzymywal sie na poziomie <= 10k, co przy throughpucie rzedu 30k/sek nie stanowi problemu). 
 
 
 [Dashboard](https://us1data.long.sumologic.net/ui/#/dashboardv2/in0XYDk7Ano1qEWgAcpIuR1sBr7A2oGlFpCK4AYm0HABcVb5f5zOhkN6UnAh?variables=ktp:0000000000520B73-metrics_raw_data-27)
 
 
 
-==TODO:== how many alerts it would be if the threshold was equal to 30k?
+----
+Idea:
+
+Remove the log & change it to a log message.
+
+Goal:
+- dashboard with an information how many times specific threshold was exceeded, day by day  

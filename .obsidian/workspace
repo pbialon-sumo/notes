@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Tasks/Eliminate flaky alarm.md",
+            "file": "2022-02-23.md",
             "mode": "source",
             "source": true
           }
@@ -57,8 +57,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -79,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tasks/Eliminate flaky alarm.md",
+                "file": "2022-02-23.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tasks/Eliminate flaky alarm.md",
+                "file": "2022-02-23.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,15 +133,15 @@
   },
   "active": "77363a9cca93cf16",
   "lastOpenFiles": [
-    "Tasks/Eliminate flaky alarm.md",
+    "2022-02-23.md",
+    "2022-02-25.md",
     "2022-02-28.md",
+    "Tasks/Eliminate flaky alarm.md",
     "General/Query Language/Logs.md",
     "General/Query Language/Metrics.md",
     "Plans/Daily Kanban.md",
     "Personal/General project info.md",
     "Instructions/Local deployment.md",
-    "General/Questions.md",
-    "Self review/My pitfalls.md",
-    "Day Planners/Day Planner-20220225.md"
+    "General/Questions.md"
   ]
 }
