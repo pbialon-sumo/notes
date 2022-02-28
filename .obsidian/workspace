@@ -7,9 +7,11 @@
         "id": "77363a9cca93cf16",
         "type": "leaf",
         "state": {
-          "type": "kanban",
+          "type": "markdown",
           "state": {
-            "file": "Plans/Daily Kanban.md"
+            "file": "Tasks/Eliminate flaky alarm.md",
+            "mode": "source",
+            "source": true
           }
         }
       }
@@ -38,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ingest scaling",
+                "query": "quantize",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -55,7 +57,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -76,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Plans/Daily Kanban.md",
+                "file": "Tasks/Eliminate flaky alarm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +96,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Plans/Daily Kanban.md",
+                "file": "Tasks/Eliminate flaky alarm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,15 +134,15 @@
   },
   "active": "77363a9cca93cf16",
   "lastOpenFiles": [
+    "Tasks/Eliminate flaky alarm.md",
+    "2022-02-28.md",
+    "General/Query Language/Logs.md",
+    "General/Query Language/Metrics.md",
     "Plans/Daily Kanban.md",
     "Personal/General project info.md",
     "Instructions/Local deployment.md",
     "General/Questions.md",
     "Self review/My pitfalls.md",
-    "Day Planners/Day Planner-20220225.md",
-    "Day Planners/Untitled.md",
-    "2022-02-25.md",
-    "2022-02-23.md",
-    "List of tasks I do whan I procrastinate.md"
+    "Day Planners/Day Planner-20220225.md"
   ]
 }
