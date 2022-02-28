@@ -48,7 +48,7 @@
 ==TODO: poprawic dwie ponizsze definicje==
 **Ingest scaling** - receiver dostaje batch (od source'a) -> nie routuje tylko po source_id, ale tez po jakims hashu metryki albo dimentionie. Na razie jest dosyc manualny. Definiujemy ile KTPsow na ingest scaling a ile na default.
 
-**Automatic ingest scaling** - na etapie receivera mamy customowy kod, ktory slabo reaguje na lagi i powoduje data lossy. Mamy reczne konfiguracje, ale chcemy automat.
+**Automatic ingest scaling** - na etapie receivera mamy customowy kod, ktory slabo reaguje na lagi i powoduje data lossy. Mamy reczne konfiguracje, ale chcemy automat. ^967a86
 
 **Rightsizing** - optymalizacja ilosci instancji vs zuzycia zasobow 
 

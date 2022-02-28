@@ -11,5 +11,6 @@
   "convert-url-to-iframe",
   "obsidian-git",
   "emoji-shortcodes",
-  "obsidian-day-planner"
+  "obsidian-day-planner",
+  "obsidian-dynamic-toc"
 ]
