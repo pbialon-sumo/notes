@@ -29,7 +29,7 @@
 
 ## Metrics namespace
 
-**Efemerical metrics**- krotko zyjace metryki
+**Ephemeral metrics**- krotko zyjace metryki
 
 **Carbon** - metrics format, eg. `name=cpu host=panels12 16923392 76.3`
 
