@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2022-03-01.md",
-            "mode": "source",
+            "file": "Architecture/Resource Aware Partitioning.md",
+            "mode": "preview",
             "source": true
           }
         }
@@ -57,8 +57,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -79,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022-03-01.md",
+                "file": "Architecture/Resource Aware Partitioning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2022-03-01.md",
+                "file": "Architecture/Resource Aware Partitioning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,15 +133,15 @@
   },
   "active": "d578df1f0d0da1c3",
   "lastOpenFiles": [
-    "2022-03-01.md",
-    "Architecture/Kafka.md",
     "Architecture/Resource Aware Partitioning.md",
-    "Plans/TODO.md",
-    "Self review/Rules.md",
-    "Tasks/MacOS M1 freeze.md",
-    "Tasks/Not bill customers for dropped datapoints.md",
-    "Tasks/Review - partitioning.md",
+    "Resource Aware Partitioning_2022-02-28 18.11.51.excalidraw.md",
     "2022-02-23.md",
-    "2022-02-28.md"
+    "2022-03-01.md",
+    "2022-02-28.md",
+    "Plans/TODO.md",
+    "Plans/Kanban board.md",
+    "Plans/Daily Kanban.md",
+    "Architecture/Kafka.md",
+    "Self review/Rules.md"
   ]
 }
