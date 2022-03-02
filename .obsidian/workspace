@@ -134,14 +134,14 @@
   "active": "d578df1f0d0da1c3",
   "lastOpenFiles": [
     "2022-03-01.md",
-    "Architecture/Resource Aware Partitioning.md",
-    "Resource Aware Partitioning_2022-02-28 18.11.51.excalidraw.md",
-    "2022-02-23.md",
-    "2022-02-28.md",
     "Plans/TODO.md",
     "Plans/Kanban board.md",
-    "Plans/Daily Kanban.md",
-    "Architecture/Kafka.md",
-    "Self review/Rules.md"
+    "Instructions/Local deployment.md",
+    "General/Questions.md",
+    "General/Dictionary.md",
+    "2022-02-23.md",
+    "Feedback for SUMO.md",
+    "2022-02-28.md",
+    "Tasks/Not bill customers for dropped datapoints.md"
   ]
 }
